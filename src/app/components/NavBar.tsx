@@ -6,7 +6,7 @@ import { NAV_LINKS } from '../constants'
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between m-4">
+    <nav className="flex justify-between m-4 bg-slate-400">
       <Link href="/">
         <Image src={RCILogo} alt="logo" height={100} width={200} />
       </Link>
@@ -15,7 +15,7 @@ const NavBar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
+            className="regular-16 text-black flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"
           >
             {link.label}
           </Link>

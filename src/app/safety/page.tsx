@@ -1,7 +1,11 @@
-import React from 'react'
+import HeroSection from '../components/HeroSection'
 
 const Safety = () => {
-  return <div>Safety</div>
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  )
 }
 
 export default Safety

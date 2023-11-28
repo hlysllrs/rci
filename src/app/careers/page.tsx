@@ -1,5 +1,11 @@
+import HeroSection from '../components/HeroSection'
+
 const Careers = () => {
-  return <div>Careers</div>
+  return (
+    <div>
+      <HeroSection />
+    </div>
+  )
 }
 
 export default Careers

@@ -1,3 +1,5 @@
+import HeroSection from '../components/HeroSection'
+
 const Projects = () => {
   return (
     <div>

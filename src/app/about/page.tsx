@@ -1,9 +1,13 @@
 import HeroSection from '../components/HeroSection'
+import { ABOUT_DATA } from '../constants'
 
 const About = () => {
   return (
     <div>
-      <HeroSection />
+      <HeroSection
+        title={ABOUT_DATA.hero.title}
+        description={ABOUT_DATA.hero.description}
+      />
     </div>
   )
 }

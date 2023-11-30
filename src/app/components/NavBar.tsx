@@ -6,7 +6,7 @@ import { NAV_LINKS } from '../constants'
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between m-4 bg-slate-400">
+    <nav className="flex justify-between p-4 bg-slate-400 border-b-2">
       <Link href="/">
         <Image src={RCILogo} alt="logo" height={100} width={200} />
       </Link>

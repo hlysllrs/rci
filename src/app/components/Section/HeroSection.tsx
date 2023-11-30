@@ -1,9 +1,11 @@
 import React from 'react'
 
-const HeroSection = ({ title, description, link }) => {
+const HeroSection = ({ title, description, link = null }) => {
+  v
+
   return (
     <div>
-      <h2>{title}</h2>
+      <Header />
       <h3>{description}</h3>
       {link ? <p>{link}</p> : null}
     </div>

@@ -1,4 +1,4 @@
-import HeroSection from '../components/HeroSection'
+import HeroSection from '../components/Section/HeroSection'
 import { EMPLOYMENT_DATA } from '../constants'
 
 const Careers = () => {

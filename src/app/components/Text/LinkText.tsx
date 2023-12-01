@@ -1,12 +1,8 @@
+import Link from 'next/link'
 import React from 'react'
 
-interface LinkTextProps {
-  text: string
-  linkTextStyle?: string
-}
-
-const LinkText = ({ text, linkTextStyle }: LinkTextProps) => {
-  return <div className={linkTextStyle ? linkTextStyle : ''}>{text}</div>
+const LinkText = ({ link }) => {
+  return <Link href={link.url}>{link.linkText}</Link>
 }
 
 export default LinkText

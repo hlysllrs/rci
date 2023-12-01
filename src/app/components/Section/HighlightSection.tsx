@@ -12,7 +12,7 @@ const HighlightSection = ({ title, text, link }: HighlightSectionProps) => {
   return (
     <section>
       <Header text={title} />
-      {link ? <LinkText text={link} /> : null}
+      {link ? <LinkText link={link} /> : null}
     </section>
   )
 }

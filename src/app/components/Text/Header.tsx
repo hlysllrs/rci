@@ -6,11 +6,9 @@ interface HeaderProps {
 }
 
 const Header = ({ text, headerStyle }: HeaderProps) => {
-  const variants = {
-    default: '',
-  }
-
-  return <h2 className={headerStyle ? headerStyle : ''}>{text}</h2>
+  return (
+    <h2 className={headerStyle ? headerStyle : 'text-4xl font-bold'}>{text}</h2>
+  )
 }
 
 export default Header

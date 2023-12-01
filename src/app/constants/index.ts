@@ -13,8 +13,28 @@ export const NAV_LINKS = [
 export const HOME_DATA = {
   hero: {
     title: 'Prescision Blasting & Contact Drilling',
-    description:
-      'Family owned for over 50 years, we specialize in full service drilling and the application of high explosives for controlled blasting in crushing and excavation of hard rock.',
+    background: '',
+    content: {
+      text: 'Family owned for over 50 years, we specialize in full service drilling and the application of high explosives for controlled blasting in crushing and excavation of hard rock.',
+      link: {
+        linkText: 'Learn more',
+        url: '/about',
+      },
+    },
+  },
+  infoSection: {
+    title: 'Experience Makes a Difference',
+    content: {
+      text: [
+        'With many years of combined experience in, our team has developed the expertise needed to provide the construction, mining, and aggregate industry with state-of-the-art solutions to unique challenges.',
+        'We develop and maintain long term relationships with our clients by actively listening to their needs to strengthen trust and loyalty.',
+        "Our industry experience combined with our understanding of client's needs leads to efficient projects and long term relationships.",
+      ],
+      link: {
+        linkText: 'Contact us',
+        url: '/contact',
+      },
+    },
   },
 }
 export const ABOUT_DATA = {

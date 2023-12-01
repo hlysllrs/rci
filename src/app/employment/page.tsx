@@ -1,7 +1,8 @@
 import HeroSection from '../components/Section/HeroSection'
+
 import { EMPLOYMENT_DATA } from '../constants'
 
-const Careers = () => {
+const Employment = () => {
   return (
     <div>
       <HeroSection
@@ -12,4 +13,4 @@ const Careers = () => {
   )
 }
 
-export default Careers
+export default Employment

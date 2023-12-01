@@ -37,6 +37,24 @@ export const EMPLOYMENT_DATA = {
     description: 'Join our team today!',
   },
 }
+export const SAFETY_DATA = {
+  hero: {
+    title: 'Safety',
+    description: `Safety Page Description`,
+  },
+}
+export const PROJECTS_DATA = {
+  hero: {
+    title: 'Projects',
+    description: `Projects Page Description`,
+  },
+}
+export const SALES_DATA = {
+  hero: {
+    title: 'Sales',
+    description: `Sales Page Description`,
+  },
+}
 export const CONTACT_DATA = {
   hero: {
     title: 'Contact Us',

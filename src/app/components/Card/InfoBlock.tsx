@@ -1,15 +1,15 @@
 import React from 'react'
-import Subheader from '../Text/Subheader'
 import Header from '../Text/Header'
+import Subheader from '../Text/Subheader'
 import LinkText from '../Text/LinkText'
 
-interface HeroSectionProps {
+interface InfoBlockProps {
   title: string
   description: string
   link?: string
 }
 
-const HeroSection = ({ title, description, link }: HeroSectionProps) => {
+const InfoBlock = ({ title, description, link }: InfoBlockProps) => {
   return (
     <div>
       <Header text={title} />
@@ -19,4 +19,4 @@ const HeroSection = ({ title, description, link }: HeroSectionProps) => {
   )
 }
 
-export default HeroSection
+export default InfoBlock

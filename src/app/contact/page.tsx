@@ -1,5 +1,6 @@
-import ContactForm from '../components/ContactForm'
+import ContactForm from '../components/Form/ContactForm'
 import HeroSection from '../components/Section/HeroSection'
+
 import { CONTACT_DATA } from '../constants'
 
 const Contact = () => {

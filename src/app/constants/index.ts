@@ -77,6 +77,13 @@ export const ABOUT_DATA = {
       text: 'Ryan Construction, Inc. has had 54 continuous years of successful operation and expansion in the drilling and blasting field. Our goal is to provide superior service through up to date methods and equipment.',
     },
   },
+  imageSection: {
+    images: [
+      { url: '', altText: '' },
+      { url: '', altText: '' },
+      { url: '', altText: '' },
+    ],
+  },
 }
 export const SERVICES_DATA = {
   hero: {

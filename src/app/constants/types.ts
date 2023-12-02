@@ -17,3 +17,12 @@ export interface TextSection {
 export interface BlockSection {
   blocks: TextSection[]
 }
+
+export interface ImageData {
+  url: string
+  altText: string
+}
+
+export interface ImageRow {
+  images: ImageData[]
+}

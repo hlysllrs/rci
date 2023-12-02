@@ -1,13 +1,15 @@
 import HeroSection from '../components/Section/HeroSection'
-import { COMPANY_FORMS_DATA } from '../constants'
+import ImageSection from '../components/Section/ImageSection'
+import { ABOUT_DATA } from '../constants'
 
 const About = () => {
   return (
     <div>
       <HeroSection
-        title={COMPANY_FORMS_DATA.hero.title}
-        content={COMPANY_FORMS_DATA.hero.content}
+        title={ABOUT_DATA.hero.title}
+        content={ABOUT_DATA.hero.content}
       />
+      <ImageSection images={ABOUT_DATA.imageSection.images} />
     </div>
   )
 }

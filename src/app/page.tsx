@@ -3,15 +3,25 @@ import Contact from './contact/page'
 
 import { HOME_DATA } from './constants'
 import InfoSection from './components/Section/InfoSection'
+import BlockSection from './components/Section/BlockSection'
+import HighlightSection from './components/Section/HighlightSection'
 
 export default function Home() {
   return (
     <>
       <HeroSection
         title={HOME_DATA.hero.title}
-        description={HOME_DATA.hero.description}
+        content={HOME_DATA.hero.content}
       />
-      <InfoSection content={HOME_DATA.infoSection} />
+      <InfoSection
+        title={HOME_DATA.infoSection.title}
+        content={HOME_DATA.infoSection.content}
+      />
+      <BlockSection blocks={HOME_DATA.blockSection} />
+      <HighlightSection
+        title={HOME_DATA.highlight.title}
+        content={HOME_DATA.highlight.content}
+      />
       <Contact />
     </>
   )

@@ -2,19 +2,14 @@ import React from 'react'
 import Header from '../Text/Header'
 import Subheader from '../Text/Subheader'
 import LinkText from '../Text/LinkText'
+import { TextSection } from '@/app/constants/types'
+import Body from '../Text/Body'
 
-interface InfoBlockProps {
-  title: string
-  description: string
-  link?: string
-}
-
-const InfoBlock = ({ title, description, link }: InfoBlockProps) => {
+const InfoBlock = ({ title, content }: TextSection) => {
   return (
-    <div>
+    <div className="flex-1 h-full">
       <Header text={title} />
-      <Subheader text={description} />
-      {link ? <LinkText text={link} /> : null}
+      <Body text={content.text} link={content.link} />
     </div>
   )
 }

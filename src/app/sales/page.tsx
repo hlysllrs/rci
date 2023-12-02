@@ -7,7 +7,7 @@ const Sales = () => {
     <div>
       <HeroSection
         title={SALES_DATA.hero.title}
-        description={SALES_DATA.hero.description}
+        content={SALES_DATA.hero.content}
       />
     </div>
   )

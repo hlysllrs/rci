@@ -7,7 +7,7 @@ const Employment = () => {
     <div>
       <HeroSection
         title={EMPLOYMENT_DATA.hero.title}
-        description={EMPLOYMENT_DATA.hero.description}
+        content={EMPLOYMENT_DATA.hero.content}
       />
     </div>
   )

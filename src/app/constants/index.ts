@@ -36,55 +36,108 @@ export const HOME_DATA = {
       },
     },
   },
+  blockSection: [
+    {
+      title: 'Precision Blasting',
+      background: '',
+      content: {
+        link: {
+          linkText: 'Learn more',
+          url: '/services',
+        },
+      },
+    },
+    {
+      title: 'Contract Drilling',
+      background: '',
+      content: {
+        link: {
+          linkText: 'Learn more',
+          url: '/services',
+        },
+      },
+    },
+  ],
+  highlight: {
+    title: "We're Hiring!",
+    content: {
+      text: 'Qualified Heavy Diesel Mechanics, Lube Technicians, Heavy Haul Truck Drivers, Rock Drillers',
+      link: {
+        linkText: 'Apply Now',
+        url: '/employment',
+      },
+    },
+  },
 }
 export const ABOUT_DATA = {
   hero: {
     title: 'We Have the Experience',
-    description:
-      'Ryan Construction, Inc. has had 54 continuous years of successful operation and expansion in the drilling and blasting field. Our goal is to provide superior service through up to date methods and equipment.',
+    background: '',
+    content: {
+      text: 'Ryan Construction, Inc. has had 54 continuous years of successful operation and expansion in the drilling and blasting field. Our goal is to provide superior service through up to date methods and equipment.',
+    },
   },
 }
 export const SERVICES_DATA = {
   hero: {
     title: 'Services',
-    description:
-      'Hire Ryan Construction for your precision drilling and blasting needs.',
+    background: '',
+    content: {
+      text: 'Hire Ryan Construction for your precision drilling and blasting needs.',
+    },
   },
 }
 export const EMPLOYMENT_DATA = {
   hero: {
     title: 'Employment',
-    description: 'Join our team today!',
+    background: '',
+    content: {
+      text: 'Join our team today!',
+    },
   },
 }
 export const SAFETY_DATA = {
   hero: {
     title: 'Safety',
-    description: `Safety Page Description`,
+    background: '',
+    content: {
+      text: `Safety Page Description`,
+    },
   },
 }
 export const PROJECTS_DATA = {
   hero: {
     title: 'Projects',
-    description: `Projects Page Description`,
+    background: '',
+    content: {
+      text: `Projects Page Description`,
+    },
   },
 }
 export const SALES_DATA = {
   hero: {
     title: 'Sales',
-    description: `Sales Page Description`,
+    background: '',
+    content: {
+      text: `Sales Page Description`,
+    },
   },
 }
 export const CONTACT_DATA = {
   hero: {
     title: 'Contact Us',
-    description: `INSERT ADDRESS AND PHONE NUMBER`,
+    background: '',
+    content: {
+      text: `INSERT ADDRESS AND PHONE NUMBER`,
+    },
   },
 }
 export const COMPANY_FORMS_DATA = {
   hero: {
     title: 'Prescision Blasting & Contact Drilling',
-    description:
-      'Family owned for over 50 years, we specialize in full service drilling and the application of high explosives for controlled blasting in crushing and excavation of hard rock.',
+    background: '',
+    content: {
+      text: 'Family owned for over 50 years, we specialize in full service drilling and the application of high explosives for controlled blasting in crushing and excavation of hard rock.',
+    },
   },
 }

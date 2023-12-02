@@ -6,7 +6,7 @@ const Services = () => {
     <>
       <HeroSection
         title={SERVICES_DATA.hero.title}
-        description={SERVICES_DATA.hero.description}
+        content={SERVICES_DATA.hero.content}
       />
     </>
   )

@@ -8,7 +8,7 @@ const Contact = () => {
     <div>
       <HeroSection
         title={CONTACT_DATA.hero.title}
-        description={CONTACT_DATA.hero.description}
+        content={CONTACT_DATA.hero.content}
       />
       <ContactForm />
     </div>

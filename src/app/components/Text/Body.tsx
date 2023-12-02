@@ -1,16 +1,17 @@
 import Link from 'next/link'
 import React from 'react'
 import LinkText from './LinkText'
+import { BodyContent } from '@/app/constants/types'
 
-const Body = ({ textContent, link }) => {
+const Body = ({ text, link }: BodyContent) => {
   return (
     <div>
-      {textContent.length > 1 ? (
-        textContent.map((para) => <p>{para}</p>)
+      {typeof text === 'object' ? (
+        text.map((para) => <p>{para}</p>)
       ) : (
-        <p>{textContent[0]}</p>
+        <p>{text}</p>
       )}
-      <LinkText link={link} />
+      {link ? <LinkText linkText={link?.linkText} url={link?.url} /> : null}
     </div>
   )
 }

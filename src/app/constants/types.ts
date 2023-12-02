@@ -1,15 +1,19 @@
-interface Link {
+export interface TextLink {
   linkText: string
   url: string
 }
 
-interface BodyContent {
-  text: string | string[]
-  link?: Link
+export interface BodyContent {
+  text?: string | string[]
+  link?: TextLink
 }
 
-interface Section {
+export interface TextSection {
   title: string
   backgroundImage?: string
   content: BodyContent
+}
+
+export interface BlockSection {
+  blocks: TextSection[]
 }

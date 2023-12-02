@@ -1,18 +1,17 @@
 import React from 'react'
 import Header from '../Text/Header'
-import LinkText from '../Text/LinkText'
+import Body from '../Text/Body'
+import { TextSection } from '@/app/constants/types'
 
-interface HighlightSectionProps {
-  title: string
-  text: string
-  link?: string
-}
-
-const HighlightSection = ({ title, text, link }: HighlightSectionProps) => {
+const HighlightSection = ({ title, content }: TextSection) => {
   return (
-    <section>
-      <Header text={title} />
-      {link ? <LinkText link={link} /> : null}
+    <section className="grid grid-cols-12 h-48 bg-red-600">
+      <div className="col-span-7 h-full">
+        <Header text={title} />
+      </div>
+      <div className="col-start-8 col-end-13 h-full">
+        <Body text={content.text} link={content.link} />
+      </div>
     </section>
   )
 }

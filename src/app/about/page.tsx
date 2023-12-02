@@ -6,7 +6,7 @@ const About = () => {
     <div>
       <HeroSection
         title={COMPANY_FORMS_DATA.hero.title}
-        description={COMPANY_FORMS_DATA.hero.description}
+        content={COMPANY_FORMS_DATA.hero.content}
       />
     </div>
   )

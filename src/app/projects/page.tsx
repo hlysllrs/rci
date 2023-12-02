@@ -7,7 +7,7 @@ const Projects = () => {
     <div>
       <HeroSection
         title={PROJECTS_DATA.hero.title}
-        description={PROJECTS_DATA.hero.description}
+        content={PROJECTS_DATA.hero.content}
       />
     </div>
   )

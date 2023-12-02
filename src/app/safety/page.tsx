@@ -7,7 +7,7 @@ const Safety = () => {
     <div>
       <HeroSection
         title={SAFETY_DATA.hero.title}
-        description={SAFETY_DATA.hero.description}
+        content={SAFETY_DATA.hero.content}
       />
     </div>
   )

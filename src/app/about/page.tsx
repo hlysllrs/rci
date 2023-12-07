@@ -1,5 +1,6 @@
 import HeroSection from '../components/Section/HeroSection'
 import ImageSection from '../components/Section/ImageSection'
+import Timeline from '../components/Section/Timeline'
 import { ABOUT_DATA } from '../constants'
 
 const About = () => {
@@ -10,6 +11,7 @@ const About = () => {
         content={ABOUT_DATA.hero.content}
       />
       <ImageSection images={ABOUT_DATA.imageSection.images} />
+      <Timeline />
     </div>
   )
 }

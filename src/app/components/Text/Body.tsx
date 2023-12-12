@@ -3,7 +3,7 @@ import React from 'react'
 import LinkText from './LinkText'
 import { BodyContent } from '@/app/constants/types'
 
-const Body = ({ text, link }: BodyContent) => {
+const Body = ({ text }: BodyContent) => {
   return (
     <div>
       {typeof text === 'object' ? (
@@ -11,7 +11,6 @@ const Body = ({ text, link }: BodyContent) => {
       ) : (
         <p>{text}</p>
       )}
-      {link ? <LinkText linkText={link?.linkText} url={link?.url} /> : null}
     </div>
   )
 }

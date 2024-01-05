@@ -1,6 +1,4 @@
-import HeroSection from './components/Section/HeroSection'
 import Contact from './contact/page'
-
 import { HOME_DATA } from './constants'
 import InfoSection from './components/Section/InfoSection'
 import BlockSection from './components/Section/BlockSection'
@@ -9,7 +7,7 @@ import HighlightSection from './components/Section/HighlightSection'
 export default function Home() {
   return (
     <>
-      <HeroSection
+      <InfoSection
         title={HOME_DATA.hero.title}
         content={HOME_DATA.hero.content}
       />
@@ -18,7 +16,7 @@ export default function Home() {
         content={HOME_DATA.infoSection.content}
       />
       <BlockSection blocks={HOME_DATA.blockSection} />
-      <HighlightSection
+      <InfoSection
         title={HOME_DATA.highlight.title}
         content={HOME_DATA.highlight.content}
       />

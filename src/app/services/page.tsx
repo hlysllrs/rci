@@ -1,11 +1,11 @@
 import HalfImageSection from '../components/Section/HalfImageSection'
-import HeroSection from '../components/Section/HeroSection'
+import InfoSection from '../components/Section/InfoSection'
 import { SERVICES_DATA } from '../constants'
 
 const Services = () => {
   return (
     <>
-      <HeroSection
+      <InfoSection
         title={SERVICES_DATA.hero.title}
         content={SERVICES_DATA.hero.content}
       />

@@ -7,9 +7,9 @@ const Body = ({ text }: BodyContent) => {
   return (
     <div>
       {typeof text === 'object' ? (
-        text.map((para) => <p>{para}</p>)
+        text.map((para) => <p className="pb-5">{para}</p>)
       ) : (
-        <p>{text}</p>
+        <p className="pb-5">{text}</p>
       )}
     </div>
   )

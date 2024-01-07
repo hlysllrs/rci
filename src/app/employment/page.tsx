@@ -1,11 +1,11 @@
-import HeroSection from '../components/Section/HeroSection'
+import InfoSection from '../components/Section/InfoSection'
 
 import { EMPLOYMENT_DATA } from '../constants'
 
 const Employment = () => {
   return (
     <div>
-      <HeroSection
+      <InfoSection
         title={EMPLOYMENT_DATA.hero.title}
         content={EMPLOYMENT_DATA.hero.content}
       />

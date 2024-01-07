@@ -1,14 +1,18 @@
 import React from 'react'
+import { Variants } from '@/app/constants/types'
 
 interface HeaderProps {
   text: string
-  headerStyle?: string
+  variant?: string
 }
 
-const Header = ({ text, headerStyle }: HeaderProps) => {
-  return (
-    <h2 className={headerStyle ? headerStyle : 'text-4xl font-bold'}>{text}</h2>
-  )
+const Header = ({ text, variant = 'default' }: HeaderProps) => {
+  const variants: Variants = {
+    hero: 'text-6xl',
+    default: 'text-5xl',
+  }
+
+  return <h2 className={`${variants[variant]} font-bold w-2/3`}>{text}</h2>
 }
 
 export default Header

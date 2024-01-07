@@ -1,12 +1,12 @@
 import React from 'react'
 
 import { COMPANY_FORMS_DATA } from '../constants'
-import HeroSection from '../components/Section/HeroSection'
+import InfoSection from '../components/Section/InfoSection'
 
 const CompanyForms = () => {
   return (
     <div>
-      <HeroSection
+      <InfoSection
         title={COMPANY_FORMS_DATA.hero.title}
         content={COMPANY_FORMS_DATA.hero.content}
       />

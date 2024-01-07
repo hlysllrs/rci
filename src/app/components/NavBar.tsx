@@ -1,14 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import RCILogo from '../../../public/rci-logo.png'
+import RCILogo from '../../../public/RC_LOGO_WHITE_01.png'
 
 import { NAV_LINKS } from '../constants'
 
 const NavBar = () => {
   return (
-    <nav className="flex justify-between h-36 lg:grid lg:grid-cols-12 p-8 border-b-2 border-white z-10 items-center">
+    <nav className="flex justify-between h-36 w-full lg:grid lg:grid-cols-12 p-8 border-b-2 border-white z-10 items-center absolute">
       <Link href="/" className="lg: col-span-7">
-        <Image src={RCILogo} alt="logo" height={80} width={160} />
+        <Image src={RCILogo} alt="logo" height={100} width={250} />
       </Link>
       <ul className="hidden h-full gap-12 lg:col-start-8 lg:col-end-13 lg:flex lg:items-center lg:justify-between">
         {NAV_LINKS.map((link) => (

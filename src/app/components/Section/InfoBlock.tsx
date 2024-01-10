@@ -3,16 +3,23 @@ import Image from 'next/image'
 import Header from '../Text/Header'
 import Body from '../Text/Body'
 import LinkText from '../Text/LinkText'
-import { TextSection } from '@/app/constants/types'
+import { TextSection, Variants } from '@/app/constants/types'
 
-const InfoBlock = ({ title, content, background, photo }: TextSection) => {
+const InfoBlock = ({
+  title,
+  content,
+  background,
+  photo,
+  variant = 'default',
+}: TextSection) => {
+  const variants: Variants = {
+    default: 'bg-lightgrey h-full text-black',
+    photo: 'h-[34rem] text-white',
+  }
+
   return (
     <section
-      className={`flex flex-col relative px-6 w-full h-[34rem] py-6 ${
-        background && background.bgType === 'Color'
-          ? `bg-${background.color}`
-          : null
-      }`}
+      className={`flex flex-col relative px-6 w-full py-6 ${variants[variant]}`}
     >
       {background && background.bgType === 'Photo' ? (
         <Image
@@ -26,11 +33,19 @@ const InfoBlock = ({ title, content, background, photo }: TextSection) => {
       <div className="">
         <Header text={title} />
       </div>
-      <div className="">
+      <div className="pt-4">
         <Body text={content.text} />
-        {content.link && (
-          <LinkText url={content.link.url} linkText={content.link.linkText} />
-        )}
+        {content.links ? (
+          <div className="">
+            {content.links.map((link, i) => (
+              <LinkText
+                url={link.url}
+                linkText={link.linkText}
+                variant={variant === 'highlight' ? 'highlight' : 'default'}
+              />
+            ))}
+          </div>
+        ) : null}
       </div>
     </section>
   )

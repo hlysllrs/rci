@@ -9,12 +9,14 @@ const LinkText = ({ linkText, url, variant = 'default' }: TextLink) => {
   }
 
   return (
-    <Link
-      href={url}
-      className={`border-b-4 ${variants[variant]} hover:border-b-white font-bold`}
-    >
-      {linkText}
-    </Link>
+    <>
+      <Link
+        href={url}
+        className={`border-b-4 ${variants[variant]} hover:border-b-white font-bold block w-fit mb-2 last:mb-0`}
+      >
+        {linkText}
+      </Link>
+    </>
   )
 }
 

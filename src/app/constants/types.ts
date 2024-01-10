@@ -1,16 +1,11 @@
 import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
-export interface TextLink {
-  linkText: string
-  url: string
-  variant?: string
+// Data Format Types
+export interface PageData {
+  [index: string]: TextSection
 }
 
-export interface BodyContent {
-  text?: string | string[]
-  link?: TextLink
-}
-
+// Section Types
 export interface Section {
   background: {
     bgType: keyof typeof BackgroundType
@@ -26,30 +21,39 @@ export interface TextSection extends Section {
   content: BodyContent
 }
 
+// Component Data Types
+export interface TextLink {
+  linkText: string
+  url: string
+  variant?: string
+}
+
+export interface BodyContent {
+  text?: string | string[]
+  links?: TextLink[]
+}
+
 export interface Variants {
   [key: string]: string
 }
 
+// Enum Types
 export const enum BackgroundType {
   Photo = 'photo',
-  Color = 'color',
+  Solid = 'solid',
 }
 
 export const enum BackgroundColor {
   Black = 'black',
   Red = 'red',
-  LightGrey = 'lightGrey',
+  LightGrey = 'lightgrey',
 }
 
-export interface BlockSection {
-  blocks: TextSection[]
-}
+// export interface ImageData {
+//   url: string
+//   altText: string
+// }
 
-export interface ImageData {
-  url: string
-  altText: string
-}
-
-export interface ImageRow {
-  images: ImageData[]
-}
+// export interface ImageRow {
+//   images: ImageData[]
+// }

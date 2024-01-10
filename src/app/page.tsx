@@ -2,24 +2,22 @@ import Contact from './contact/page'
 // import { HOME_DATA } from './constants'
 import InfoSection from './components/Section/InfoSection'
 import InfoBlock from './components/Section/InfoBlock'
-import { TextSection } from './constants/types'
+import { PageData } from './constants/types'
 import HomeHeaderImage from 'public/RCI_HOME_1.jpg'
 import HomeDrillImage from 'public/RCI_HOME_DRILL.jpg'
 
-interface HomeData {
-  [index: string]: TextSection
-}
-
-const HOME_DATA: HomeData = {
+const HOME_DATA: PageData = {
   // HERO INFO SECTION
   info1: {
     title: 'Prescision Blasting & Contact Drilling',
     content: {
       text: 'Family owned for over 50 years, we specialize in full service drilling and the application of high explosives for controlled blasting in crushing and excavation of hard rock.',
-      link: {
-        linkText: 'Learn more',
-        url: '/about',
-      },
+      links: [
+        {
+          linkText: 'Learn more',
+          url: '/about',
+        },
+      ],
     },
     background: {
       bgType: 'Photo',
@@ -36,10 +34,12 @@ const HOME_DATA: HomeData = {
         'We develop and maintain long term relationships with our clients by actively listening to their needs to strengthen trust and loyalty.',
         "Our industry experience combined with our understanding of client's needs leads to efficient projects and long term relationships.",
       ],
-      link: {
-        linkText: 'Contact us',
-        url: '/contact',
-      },
+      links: [
+        {
+          linkText: 'Contact us',
+          url: '/contact',
+        },
+      ],
     },
     background: {
       bgType: 'Photo',
@@ -51,41 +51,49 @@ const HOME_DATA: HomeData = {
   block1: {
     title: 'Precision Blasting',
     content: {
-      link: {
-        linkText: 'Learn more',
-        url: '/services',
-      },
+      links: [
+        {
+          linkText: 'Learn more',
+          url: '/services',
+        },
+      ],
     },
     background: {
       bgType: 'Photo',
       imageUrl: 'public/RCI_HOME_DRILL.jpg',
     },
+    variant: 'photo',
   },
   block2: {
     title: 'Contract Drilling',
     content: {
-      link: {
-        linkText: 'Learn more',
-        url: '/services',
-      },
+      links: [
+        {
+          linkText: 'Learn more',
+          url: '/services',
+        },
+      ],
     },
     background: {
       bgType: 'Photo',
       imageUrl: 'public/RCI_HOME_DRILL.jpg',
     },
+    variant: 'photo',
   },
   // HIGHIGHT INFO SECTION
   info3: {
     title: "We're Hiring!",
     content: {
       text: 'Qualified Heavy Diesel Mechanics, Lube Technicians, Heavy Haul Truck Drivers, Rock Drillers',
-      link: {
-        linkText: 'Apply Now',
-        url: '/employment',
-      },
+      links: [
+        {
+          linkText: 'Apply Now',
+          url: '/employment',
+        },
+      ],
     },
     background: {
-      bgType: 'Color',
+      bgType: 'Solid',
       color: 'Red',
     },
     variant: 'highlight',
@@ -119,12 +127,14 @@ export default function Home() {
           content={HOME_DATA.block1.content}
           background={HOME_DATA.block1.background}
           photo={HomeDrillImage}
+          variant={HOME_DATA.block1.variant}
         />
         <InfoBlock
           title={HOME_DATA.block2.title}
           content={HOME_DATA.block2.content}
           background={HOME_DATA.block2.background}
           photo={HomeDrillImage}
+          variant={HOME_DATA.block2.variant}
         />
       </div>
 

@@ -23,7 +23,7 @@ const InfoSection = ({
       className={`grid grid-cols-1 lg:grid-cols-12 relative px-6 w-full ${
         variants[variant]
       } ${
-        background && background.bgType === 'Color'
+        background && background.bgType === 'Solid'
           ? `bg-${background.color}`
           : null
       }`}
@@ -45,12 +45,16 @@ const InfoSection = ({
       </div>
       <div className="lg:col-start-8 lg:col-end-13 h-full">
         {content.text ? <Body text={content.text} /> : null}
-        {content.link ? (
-          <LinkText
-            url={content.link.url}
-            linkText={content.link.linkText}
-            variant={variant === 'highlight' ? 'highlight' : 'default'}
-          />
+        {content.links ? (
+          <div className="">
+            {content.links.map((link, i) => (
+              <LinkText
+                url={link.url}
+                linkText={link.linkText}
+                variant={variant === 'highlight' ? 'highlight' : 'default'}
+              />
+            ))}
+          </div>
         ) : null}
       </div>
     </section>

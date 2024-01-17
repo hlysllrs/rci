@@ -16,6 +16,8 @@ const InfoSection = ({
     hero: 'h-[36rem] pt-40 pb-4',
     default: 'h-96 py-6 bg-black',
     highlight: 'h-40 py-6 bg-red',
+    resWhite: 'bg-white pb-8',
+    resGrey: 'bg-lightgrey pb-8',
   }
 
   return (

@@ -24,7 +24,7 @@ const SERVICES_DATA: PageData = {
     content: {
       text: [
         'Ryan Construction Inc. approaches each blast differently. With decades of experience we understand that many factors come into play when approaching a blast site, from the materials used, quantity, and the geological area that the job is performed in; all these factors come into play and more. RCI starts each job by coordinating with safety and site supervisors to lay out the shot pattern to meet the exact needs of our clients.',
-        'Ryan Construction Inc. and many of our employees are members of the International Society of Explos ive Engineers (ISEEE), the largest professional association of explosive engineers. ',
+        'Ryan Construction Inc. and many of our employees are members of the International Society of Explosive Engineers (ISEEE), the largest professional association of explosive engineers. ',
       ],
 
       links: [

@@ -20,9 +20,17 @@ const ABOUT_DATA: PageData = {
     variant: 'hero',
   },
   // TIMELINE SECTION
-  // timeline: {
-  //   title: 'Our Story',
-  // },
+  timeline: {
+    title: 'Our Story',
+    data: [
+      { year: '1958', event: 'Event' },
+      { year: '1967', event: 'Event' },
+      { year: '1973', event: 'Event' },
+      { year: '1997', event: 'Event' },
+      { year: '1999', event: 'Event' },
+      { year: '2004', event: 'Event' },
+    ],
+  },
 }
 
 const About = () => {
@@ -47,7 +55,10 @@ const About = () => {
           <Image src={AboutImage2} alt="" priority={true} />
         </div>
       </div>
-      <Timeline />
+      <Timeline
+        title={ABOUT_DATA.timeline.title}
+        data={ABOUT_DATA.timeline.data}
+      />
     </>
   )
 }

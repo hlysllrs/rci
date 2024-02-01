@@ -5,6 +5,7 @@ import InfoBlock from './components/Section/InfoBlock'
 import { PageData } from './constants/types'
 import HomeHeaderImage from 'public/RCI_HOME_1.jpg'
 import HomeDrillImage from 'public/RCI_HOME_DRILL.jpg'
+import Slideshow from './components/Section/Slideshow'
 
 const HOME_DATA: PageData = {
   // HERO INFO SECTION
@@ -119,7 +120,8 @@ export default function Home() {
         background={HOME_DATA.info2.background}
         variant={HOME_DATA.info2.variant}
       />
-
+      {/* SLIDESHOW SECTION */}
+      <Slideshow />
       {/* INFO BLOCK SECTION */}
       <div className="flex flex-row w-full justify-between">
         <InfoBlock

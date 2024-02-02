@@ -38,11 +38,13 @@ const InfoBlock = ({
         {content.links ? (
           <div className="">
             {content.links.map((link, i) => (
-              <LinkText
-                url={link.url}
-                linkText={link.linkText}
-                variant={variant === 'highlight' ? 'highlight' : 'default'}
-              />
+              <div key={i}>
+                <LinkText
+                  url={link.url}
+                  linkText={link.linkText}
+                  variant={variant === 'highlight' ? 'highlight' : 'default'}
+                />
+              </div>
             ))}
           </div>
         ) : null}

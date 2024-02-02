@@ -9,10 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "embla-carousel-autoplay": "^8.0.0-rc22",
+    "embla-carousel-react": "^8.0.0-rc22",
     "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18",
-    "swiper": "^11.0.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
